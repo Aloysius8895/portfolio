@@ -1,0 +1,13 @@
+.git
+node_modules
+dist
+.local-admin
+.admin-verification
+.build-tests
+.env
+.env.*
+**/__pycache__
+**/*.pyc
+template3/verification
+template3/docs/cleanup-*.json
+template3/site/project-discs/*.svg
