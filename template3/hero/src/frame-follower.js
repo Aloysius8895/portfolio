@@ -4,13 +4,14 @@ import { createAtlasRenderer } from './atlas-renderer.js';
 export class FrameFollower {
   constructor(media, poster, map, { manifestURL, reduced = false, smoothingMs = 180, maxFramesPerSecond = 72,
     onChange = () => {}, onFailure = () => {} } = {}) {
-    Object.assign(this, { media, poster, map, reduced, smoothingMs, maxFramesPerSecond, onChange, onFailure });
+    Object.assign(this, { media, poster, map, manifestURL, reduced, smoothingMs, maxFramesPerSecond, onChange, onFailure });
     this.times = Object.fromEntries(Object.entries(map).map(([key, value]) => [key, value.time ?? DEFAULT_TIMES[key]]));
     this.starts = Object.fromEntries(Object.entries(map).map(([key, value]) => [key, value.start ?? DEFAULT_STARTS[key]]));
     this.fps = 24; this.frameCount = 240; this.frame = this.target = this.times.center * this.fps;
     this.cycle = new PointerCycleTracker({ fps: this.fps, frameCount: this.frameCount, times: this.times, starts: this.starts });
     this.activeKey = 'center'; this.position = { x: 0, y: 0 }; this.raf = null; this.lastTime = 0;
     this.paused = false; this.ready = false; this.failed = false; this.destroyed = false; this.renderer = null;
+    this.loading = false; this.generation = 0;
     this.abort = new AbortController();
     this.canvas = document.createElement('canvas'); this.canvas.className = 'aloy-expression-canvas';
     this.canvas.width = this.canvas.height = 640; this.canvas.setAttribute('aria-hidden', 'true');
@@ -19,19 +20,36 @@ export class FrameFollower {
   }
 
   async load(url) {
+    const generation = ++this.generation, controller = this.abort;
+    this.loading = true;
     try {
-      const response = await fetch(url, { signal: this.abort.signal });
+      const response = await fetch(url, { signal: controller.signal });
       if (!response.ok) throw new Error(`Expression manifest unavailable: ${response.status}`);
       const manifest = await response.json();
+      if (this.destroyed || generation !== this.generation || controller.signal.aborted) return;
       this.fps = manifest.fps; this.frameCount = manifest.frameCount;
       this.cycle = new PointerCycleTracker({ fps: this.fps, frameCount: this.frameCount, times: this.times, starts: this.starts });
-      const renderer = await createAtlasRenderer(this.canvas, manifest, this.abort.signal);
-      if (this.destroyed) { renderer.destroy(); return; }
+      const renderer = await createAtlasRenderer(this.canvas, manifest, controller.signal);
+      if (this.destroyed || generation !== this.generation || controller.signal.aborted) { renderer.destroy(); return; }
       this.renderer = renderer; this.ready = true;
       if (!this.paused) { this.frame = this.target; this.draw(); }
     } catch (error) {
-      if (!this.destroyed && error.name !== 'AbortError') { this.failed = true; this.onFailure(error); }
+      if (!this.destroyed && generation === this.generation && error.name !== 'AbortError') { this.failed = true; this.onFailure(error); }
+    } finally {
+      if (generation === this.generation) this.loading = false;
     }
+  }
+
+  ensureReady() {
+    if (this.ready || this.loading || this.destroyed || this.failed) return;
+    this.abort = new AbortController(); this.readyPromise = this.load(this.manifestURL);
+  }
+  release() {
+    this.pause(); this.generation++; this.abort.abort(); this.renderer?.destroy();
+    this.renderer = null; this.ready = false; this.loading = false; this.failed = false;
+    this.media.classList.remove('is-live');
+    const canvas = this.canvas.cloneNode(false); canvas.classList.remove('is-active');
+    this.canvas.replaceWith(canvas); this.canvas = canvas;
   }
 
   setPosition(x, y) {
@@ -50,7 +68,7 @@ export class FrameFollower {
   }
   follow(target) {
     this.paused = false; this.target = target;
-    if (!this.ready) return;
+    if (!this.ready) { this.ensureReady(); return; }
     if (this.reduced) { this.frame = target; this.draw(); return; }
     if (this.raf === null && Math.abs(this.target - this.frame) > 1e-6) {
       const now = performance.now(); this.lastTime = now - 1000 / 60; this.tick(now);
@@ -81,7 +99,7 @@ export class FrameFollower {
     this.pause(); this.paused = false; this.frame = this.target = this.times[key] * this.fps;
     this.activeKey = key; this.onChange(key);
     if (this.ready) this.draw();
-    else this.poster.src = key === 'center' ? this.poster.getAttribute('data-default-src') || this.poster.src : this.map[key].sample;
+    else { this.poster.src = key === 'center' ? this.poster.getAttribute('data-default-src') || this.poster.src : this.map[key].sample; this.ensureReady(); }
   }
   pause() {
     if (this.raf !== null) cancelAnimationFrame(this.raf);
@@ -97,7 +115,7 @@ export class FrameFollower {
     }
   }
   destroy() { this.pause(); this.destroyed = true; this.abort.abort(); this.renderer?.destroy(); this.canvas.remove(); }
-  get phase() { return this.failed ? 'fallback' : !this.ready ? 'loading' : this.raf !== null ? 'following' : 'holding'; }
+  get phase() { return this.failed ? 'fallback' : !this.ready ? this.loading ? 'loading' : 'suspended' : this.raf !== null ? 'following' : 'holding'; }
   get state() {
     const frame = wrapCycle(this.frame, this.frameCount);
     return { key: this.activeKey, phase: this.phase, continuous: true, cyclic: true, ready: this.ready, frame,

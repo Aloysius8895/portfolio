@@ -31,6 +31,12 @@ All 240 source frames are prepared into desktop/mobile WebP atlases. Moving the 
 
 Light background removal preserves enclosed eyes, glasses and hair and composites the portrait onto the page background. Original video and disc images are retained unchanged. The generated `hero/assets/final/` manifest and stills support rebuilding and fallback; the live portrait uses `hero/assets/final-atlas/`.
 
+## Mobile gallery recovery
+
+Mobile galleries cap artwork textures at 512 pixels and skip spare-renderer warmup. The portrait releases its atlas textures when the gallery takes over, and reloads them on return. Healthy galleries retain the original 3D rendering. Lost or unavailable WebGL contexts switch to a raster/CSS disk with the same artwork, metadata, detail links, swipe controls and Index navigation. Lost renderers are disposed rather than pooled. On touch devices, the canvas skips its separate opacity reveal to avoid an idle composited surface becoming invisible.
+
+`python tools/verify_mobile_discs.py` checks WebKit and Chromium mobile rendering, forced context loss, unavailable WebGL, navigation, portrait reload and landscape layout. Use `--base https://your-site.vercel.app` to verify deployment. These are browser-engine tests, not physical iPhone testing.
+
 ## Checks
 
 From the parent directory: `npm test` and `npm run check`.

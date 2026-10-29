@@ -128,6 +128,9 @@ html.aloy-js:not(.aloy-on-discs) :is(.nav, .aloy-return) {
 }
 .aloy-return:hover { background: #000; color: #f2f2f2; }
 .aloy-return[hidden] { display: none; }
+@media (max-width: 767px) {
+  .aloy-return { bottom: calc(6.2em + env(safe-area-inset-bottom, 0px)); }
+}
 
 /* Tablet / short screens */
 @media (max-width: 991px) {
@@ -174,3 +177,21 @@ html.aloy-js:not(.aloy-on-discs) :is(.nav, .aloy-return) {
   .aloy-expression-canvas, .aloy-hero__poster { transition: none; }
   .aloy-next::after { animation: none; transform: none; }
 }
+
+/* A raster/CSS disk is available when WebGL fails or loses its context. */
+.aloy-disc-fallback[hidden] { display: none !important; }
+.aloy-disc-fallback { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
+[data-disc-fallback="true"] [data-disc-canvas] > canvas { visibility: hidden; }
+.aloy-disc-fallback__link { position: absolute; left: 50%; top: var(--fallback-y, 52vh); width: var(--fallback-size, 300px); aspect-ratio: 1; transform: translate(-50%, -50%); pointer-events: auto; touch-action: pan-y; -webkit-user-select: none; user-select: none; -webkit-tap-highlight-color: transparent; }
+.aloy-disc-fallback__visual { display: block; width: 100%; height: 100%; position: relative; border-radius: 50%; transform: perspective(850px) rotateY(-22deg) rotateZ(-18deg); filter: drop-shadow(9px 12px 7px #0002); opacity: 0; }
+.aloy-disc-fallback.is-ready .aloy-disc-fallback__visual { opacity: 1; }
+.aloy-disc-fallback__visual img { display: block; width: 100%; height: 100%; object-fit: contain; border-radius: 50%; }
+.aloy-disc-fallback__visual::before { content: ''; position: absolute; inset: 0; border: 2px solid #9a9fa4; border-radius: 50%; box-shadow: inset 0 0 0 2px #eee; }
+.aloy-disc-fallback__visual::after { content: ''; position: absolute; inset: 36%; border: min(2vw, 8px) solid #b6bbc0; border-radius: 50%; box-shadow: 0 0 0 1px #f1f2f3, inset 0 0 0 1px #8b9095; }
+.aloy-disc-fallback__controls { position: absolute; left: 50%; top: calc(var(--fallback-y, 52vh) + var(--fallback-size, 300px) * .52 + 12px); transform: translateX(-50%); display: flex; align-items: center; gap: 20px; pointer-events: auto; color: #111; }
+.aloy-disc-fallback__controls button, .aloy-disc-fallback__retry { border: 1px solid currentColor; border-radius: 50%; width: 40px; height: 40px; display: grid; place-items: center; padding: 0; background: #f2f2f2; color: #111; cursor: pointer; }
+.aloy-disc-fallback__controls button:disabled { opacity: .25; cursor: default; }
+.aloy-disc-fallback__controls span { font: 12px/1.4 Arial, sans-serif; white-space: nowrap; }
+.aloy-disc-fallback__message { position: absolute; top: var(--fallback-y, 52vh); left: 50%; transform: translate(-50%, -50%); margin: 0; text-align: center; font: 12px/1.5 Arial, sans-serif; width: 220px; }
+.aloy-disc-fallback__message[hidden], .aloy-disc-fallback__retry[hidden] { display: none; }
+.aloy-disc-fallback__retry { position: absolute; top: calc(var(--fallback-y, 52vh) + 35px); left: 50%; transform: translateX(-50%); width: auto; height: auto; padding: 8px 14px; border-radius: 20px; font: 12px/1.5 Arial, sans-serif; pointer-events: auto; }

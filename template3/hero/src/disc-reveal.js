@@ -58,7 +58,9 @@ export function createDiscReveal(gallery, preference) {
     const prepareCanvas = () => {
       const canvas = canvasHost?.querySelector('canvas');
       if (!canvas) return;
-      prepare(canvas, 360);
+      // iOS can drop an idle WebGL layer while its own opacity is animated.
+      // The gallery host already participates in the intro transition.
+      if (!matchMedia('(pointer: coarse)').matches) prepare(canvas, 360);
       canvasObserver?.disconnect();
     };
     if (canvasHost) {

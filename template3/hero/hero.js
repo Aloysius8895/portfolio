@@ -2,6 +2,7 @@ import { config } from './config.js';
 import { pointerInHero } from './src/expressions.js';
 import { FrameFollower } from './src/frame-follower.js';
 import { createDiscReveal } from './src/disc-reveal.js';
+import { createDiscSafety } from './src/disc-fallback.js';
 
 // The intro and the disc gallery read as one page: a single progress value
 // (0 = intro, 1 = discs) follows the wheel/touch like a scroll position, and
@@ -23,6 +24,7 @@ function startHero() {
   const coarseQuery = matchMedia('(pointer: coarse)');
   const root = document.documentElement;
   const discReveal = createDiscReveal(document.querySelector('[data-disc-gallery]'), reducedQuery);
+  const discSafety = createDiscSafety();
   let reduced = reducedQuery.matches;
   let shown = true; // The intro owns input (at rest or mid-transition).
   let selected = 'center';
@@ -127,10 +129,12 @@ function startHero() {
   }
   function handover() {
     shown = false; player.pause();
+    if (coarseQuery.matches || innerWidth <= 767) player.release();
     root.classList.add('aloy-on-discs');
     hero.classList.add('is-dismissed');
     hero.inert = true; hero.setAttribute('aria-hidden', 'true');
     setBackdropInert(false);
+    discSafety.handover();
     if (back && location.pathname === '/') back.hidden = false;
     // Trackpad inertia keeps firing after the intro leaves; without this the
     // gallery would receive it and skip several discs at once.
@@ -280,7 +284,7 @@ function startHero() {
   window.addEventListener('pageshow', () => { if (shown) chooseExpression('center', false); });
   window.addEventListener('pagehide', event => {
     player.pause();
-    if (!event.persisted) { discReveal.destroy(); player.destroy(); }
+    if (!event.persisted) { discSafety.destroy(); discReveal.destroy(); player.destroy(); }
   });
 
   poster.src = config.media.heroPoster;
@@ -293,7 +297,7 @@ function startHero() {
   window.aloyHeroDebug = () => ({ shown, progress: +prog.toFixed(3), selected, direction, reducedMotion: reduced,
     displayedExpression: player.activeKey, heroPhase: player.phase,
     heroTime: player.state.time, expressionFrame: player.state.frame, queuedExpression: null,
-    playback: player.state, discReveal: discReveal.state });
+    playback: player.state, discReveal: discReveal.state, discSafety: discSafety.state });
 }
 
 try { startHero(); }
