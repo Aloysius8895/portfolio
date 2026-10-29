@@ -1,0 +1,419 @@
+{
+  "_note": "Edit here, then run python projects/build.py. Disc art comes from portfolio/diskPic; rebuild it with python projects/build_disc_art.py.",
+  "owner": "Aloysius8895",
+  "projects": [
+    {
+      "slug": "kerjayaku",
+      "name": "KerjayaKu (Finalist)",
+      "repo": "xmumHack",
+      "year": "2026",
+      "category": "AI × Career",
+      "context": "SDC 2026 · Team Chill Chill",
+      "stack": [
+        "Three.js",
+        "Node.js",
+        "Python",
+        "SQLite",
+        "DeepSeek"
+      ],
+      "role": "Backend · AI model · Data",
+      "team": "Chill Chill · 5 members",
+      "demo": "https://xmum-hackfinal.replit.app",
+      "pitch": "Career exploration inside a 3D world",
+      "quote": "Turn skill gaps into a journey",
+      "synopsis": "Helping Malaysian students turn career interests and skill gaps into an actionable learning journey inside a 3D world.",
+      "intro": "KerjayaKu connects career exploration, job-market examples and personalised learning in an interactive 3D environment. Students build a skills profile, choose or describe a target role, and receive AI-assisted learning paths, resources and practical tasks to close their skill gaps.",
+      "features": [
+        [
+          "Skill matching",
+          "Compare a CV or skills profile with career requirements"
+        ],
+        [
+          "Learning map",
+          "Break skill gaps into milestones, tasks and learning resources"
+        ],
+        [
+          "Market trends",
+          "Explore career rankings, monthly demand and skill mentions"
+        ],
+        [
+          "Career pet",
+          "Learning activity advances progress and a career companion"
+        ],
+        [
+          "AI mentor",
+          "Ask an AI mentor questions and sync progress through Telegram"
+        ],
+        [
+          "Multilingual",
+          "English, Chinese and Malay interfaces"
+        ]
+      ],
+      "disc": "/project-discs/kerjayaku.webp?v=8a3dd4054f",
+      "created_at": "2026-10-20T08:57:20Z",
+      "created_date": "2026-10-20",
+      "created_at_source": "https://api.github.com/repos/Aloysius8895/xmumHack"
+    },
+    {
+      "slug": "itfits",
+      "name": "ItFitS",
+      "repo": "ItFitS",
+      "year": "2026",
+      "category": "Fashion × AI Fit",
+      "context": "Mobile app · Deployed on Vercel",
+      "stack": [
+        "React Native",
+        "Expo",
+        "TypeScript",
+        "FastAPI",
+        "Gemini API"
+      ],
+      "demo": "https://itfits-five.vercel.app",
+      "pitch": "Fit, compare and try on",
+      "quote": "Check the fit before you buy",
+      "synopsis": "A mobile app for checking clothing fit, comparing sizes and exploring AI try-on through one connected workflow.",
+      "intro": "Built with React Native, Expo and TypeScript, ItFitS connects to a FastAPI backend. With Gemini API access configured, it can generate AI try-on images. When the backend is offline, it falls back to on-device size-table calculations. A mock storefront links product pages directly to the try-on flow.",
+      "features": [
+        [
+          "App flow",
+          "FIT, COMPARE, TRY ON, BODY and REVIEW"
+        ],
+        [
+          "AI try-on",
+          "Generate try-on images with a configured Gemini API"
+        ],
+        [
+          "Offline",
+          "Use on-device size tables when the backend is unavailable"
+        ],
+        [
+          "Mock store",
+          "Open the try-on flow directly from a mock product page"
+        ],
+        [
+          "Deploy",
+          "Web frontend and backend deployment on Vercel"
+        ]
+      ],
+      "disc": "/project-discs/itfits.webp?v=5cff0f6c51",
+      "created_at": "2026-10-10T09:37:07Z",
+      "created_date": "2026-10-10",
+      "created_at_source": "https://api.github.com/repos/Aloysius8895/ItFitS"
+    },
+    {
+      "slug": "metrix-ai",
+      "name": "MetriX AI (1st Runner up)",
+      "repo": "guanxiHack",
+      "year": "2026",
+      "category": "Mining × AI Concepts",
+      "context": "Mining prototype · Team Chill",
+      "stack": [
+        "Three.js",
+        "JavaScript",
+        "Blender",
+        "HTML",
+        "CSS",
+        "Python"
+      ],
+      "team": "Chill",
+      "pitch": "Mine smarter. Verify better. Recover more.",
+      "quote": "Mine smarter. Verify better. Recover more.",
+      "synopsis": "A mining product prototype connecting equipment and route optimisation, sampling support and secondary resource value assessment.",
+      "intro": "MetriX AI presents MineFit AI, QualityGuard AI and CircularMine AI through a product website and a six-wheel-legged sampling rover concept. The interactive 3D model supports orbit, driving, sampling and exploded views. English and Chinese product pages explain the proposed workflows. Current deliverables focus on product concepts, web demonstrations and the rover prototype.",
+      "features": [
+        [
+          "MineFit AI",
+          "Present equipment and route optimisation concepts"
+        ],
+        [
+          "QualityGuard AI",
+          "Explore sampling support and quality verification workflows"
+        ],
+        [
+          "CircularMine AI",
+          "Present secondary resource value assessment concepts"
+        ],
+        [
+          "Sampling rover",
+          "Interactive wheel-legged rover with drive, sample and exploded views"
+        ],
+        [
+          "Bilingual",
+          "English and Chinese product and technology presentations"
+        ]
+      ],
+      "disc": "/project-discs/metrix-ai.webp?v=6390577fce",
+      "created_at": "2026-09-30T19:58:50Z",
+      "created_date": "2026-10-01",
+      "created_at_source": "https://api.github.com/repos/Aloysius8895/guanxiHack"
+    },
+    {
+      "slug": "seceff",
+      "name": "SecEff (Finalist)",
+      "repo": "ChillChill",
+      "year": "2026",
+      "category": "Cloud × Sustainability",
+      "context": "Team Chill Chill",
+      "stack": [
+        "Node.js",
+        "Express",
+        "Python",
+        "Chart.js",
+        "vis-network"
+      ],
+      "team": "Chill Chill · 5 members",
+      "pitch": "Security, cost and carbon in one view",
+      "quote": "One decision layer for the cloud",
+      "synopsis": "A cloud governance demo combining security, resource efficiency and carbon intelligence for construction technology teams.",
+      "intro": "SecEff analyses a simulated cloud asset dataset through four connected engines: security auditing, resource efficiency, carbon estimation and AI recommendations. It brings findings into one decision layer to help teams identify which cloud resources and actions deserve attention first.",
+      "features": [
+        [
+          "Security audit",
+          "Identify public access, risky ports, encryption gaps and attack paths"
+        ],
+        [
+          "Efficiency",
+          "Find idle, orphaned and over-provisioned resources"
+        ],
+        [
+          "Carbon",
+          "Estimate monthly emissions using energy use and regional carbon intensity"
+        ],
+        [
+          "AI advice",
+          "Recommend next steps to reduce risk, cost and carbon emissions"
+        ],
+        [
+          "Data",
+          "Demonstration built around a simulated cloud asset dataset"
+        ]
+      ],
+      "disc": "/project-discs/seceff.webp?v=44ba743ed5",
+      "created_at": "2026-06-20T02:52:40Z",
+      "created_date": "2026-06-20",
+      "created_at_source": "https://api.github.com/repos/Aloysius8895/ChillChill"
+    },
+    {
+      "slug": "emptyclass",
+      "name": "EmptyClass",
+      "repo": "ImagineHackathon",
+      "year": "2026",
+      "category": "Vision × Campus",
+      "context": "ImagineHackathon",
+      "stack": [
+        "React",
+        "Vite",
+        "YOLOv8",
+        "OpenCV"
+      ],
+      "pitch": "See every empty seat on campus",
+      "quote": "See every empty seat on campus",
+      "synopsis": "Find available seats across campus by counting occupancy in classrooms, libraries and study spaces from camera footage.",
+      "intro": "The React and Vite prototype includes a live demo, floor plans and an animated explanation of the workflow. Recorded video stands in for live CCTV; YOLO detects people, while OpenCV maps detections to seat zones. The proposed backend aggregates counts for WebSocket updates, retaining counts rather than footage.",
+      "features": [
+        [
+          "Video feed",
+          "Use recorded video in place of a live CCTV feed"
+        ],
+        [
+          "Detection",
+          "Detect people with YOLOv8n without extracting facial features"
+        ],
+        [
+          "Zones",
+          "Map detections to seat regions with OpenCV"
+        ],
+        [
+          "Privacy",
+          "Retain occupancy counts rather than storing footage"
+        ],
+        [
+          "Live demo",
+          "Explore floor plans and the live demonstration interface"
+        ]
+      ],
+      "disc": "/project-discs/emptyclass.webp?v=fb6c73ea66",
+      "created_at": "2026-05-21T07:44:55Z",
+      "created_date": "2026-05-21",
+      "created_at_source": "https://api.github.com/repos/Aloysius8895/ImagineHackathon"
+    },
+    {
+      "slug": "ecolink",
+      "name": "EcoLink",
+      "repo": "MyHackathon",
+      "year": "2026",
+      "category": "AI × Ecosystem",
+      "context": "Build With AI 2026 KL · MyHack",
+      "stack": [
+        "FastAPI",
+        "Streamlit",
+        "Gemini 2.0 Flash",
+        "SQLite",
+        "Docker"
+      ],
+      "role": "FastAPI backend · Scoring · AI modules",
+      "team": "4 members",
+      "pitch": "Ecosystem relationships managed by AI",
+      "quote": "Every match makes the next one better",
+      "synopsis": "An AI ecosystem relationship engine for Cradle that turns mentor and company matching into an accumulating, repeatable workflow.",
+      "intro": "EcoLink treats ecosystem relationships as reusable data instead of restarting mentor matching and company allocation from scratch. Gemini scores potential matches and explains its reasoning. Collaboration outcomes feed into future recommendations, with human approval required before relationships are established.",
+      "features": [
+        [
+          "AI matching",
+          "Gemini provides match scores, explanations and confidence levels"
+        ],
+        [
+          "Living history",
+          "Feed collaboration outcomes back into future matching decisions"
+        ],
+        [
+          "Ethical AI",
+          "Surface confidence and bias signals with human approval"
+        ],
+        [
+          "API",
+          "Endpoints for profile extraction, matching, recommendations and feedback"
+        ],
+        [
+          "My part",
+          "FastAPI backend, application structure, scoring and AI modules"
+        ]
+      ],
+      "disc": "/project-discs/ecolink.webp?v=52dac42a51",
+      "created_at": "2026-05-15T09:44:15Z",
+      "created_date": "2026-05-15",
+      "created_at_source": "https://api.github.com/repos/Aloysius8895/MyHackathon"
+    },
+    {
+      "slug": "enervision-ai",
+      "name": "EnerVision AI",
+      "repo": "EnerVision_AI",
+      "year": "2026",
+      "category": "AI × Smart Energy",
+      "context": "Smart home prototype",
+      "stack": [
+        "Python",
+        "OpenCV",
+        "JavaScript",
+        "Google Maps API"
+      ],
+      "pitch": "Energy that knows who is home",
+      "quote": "Energy that knows who is home",
+      "synopsis": "A smart-home energy prototype using occupancy, brightness and sleep-state estimates to guide lighting, air conditioning and power controls.",
+      "intro": "Python simulations cover occupancy detection, brightness-aware lighting, non-invasive sleep estimation and automation rules, with energy logs and monthly reports. An interactive dollhouse-style web prototype adapts a home model to household inputs. An OpenCV webcam mode detects absence and starts an inactivity countdown.",
+      "features": [
+        [
+          "Detection",
+          "Estimate occupancy, brightness and sleep state"
+        ],
+        [
+          "Automation",
+          "Apply automation rules to lights, air conditioning, fans and smart plugs"
+        ],
+        [
+          "Report",
+          "Energy logging, adaptive behaviour and monthly reporting"
+        ],
+        [
+          "Prototype",
+          "Explore an interactive dollhouse-style web prototype"
+        ],
+        [
+          "Webcam",
+          "Start a five-minute countdown when OpenCV detects no occupants"
+        ]
+      ],
+      "disc": "/project-discs/enervision-ai.webp?v=54154fbb75",
+      "created_at": "2026-04-27T09:49:40Z",
+      "created_date": "2026-04-27",
+      "created_at_source": "https://api.github.com/repos/Aloysius8895/EnerVision_AI"
+    },
+    {
+      "slug": "daily-news",
+      "name": "Daily News",
+      "repo": "daily-news",
+      "year": "2026",
+      "category": "AI × Automation",
+      "context": "Daily automation",
+      "stack": [
+        "Python",
+        "OpenAI API",
+        "RSS"
+      ],
+      "pitch": "Yesterday's news, summarised by seven",
+      "quote": "Yesterday's news by seven",
+      "synopsis": "Automatically prepare a Chinese-language summary of the previous day's important news at 7 a.m.",
+      "intro": "A daily 07:00 scheduler fetches and archives RSS news, deduplicates and categorises it locally, then uses OpenAI to produce structured Chinese-language summaries. Results can be exported as Markdown, CSV and JSON, with optional delivery to Notion, Telegram or email.",
+      "features": [
+        [
+          "Fetch",
+          "Fetch and archive original news from RSS feeds"
+        ],
+        [
+          "Clean",
+          "Deduplicate and categorise articles locally"
+        ],
+        [
+          "Summarise",
+          "Use OpenAI to generate structured Chinese-language summaries"
+        ],
+        [
+          "Export",
+          "Export Markdown, CSV and JSON"
+        ],
+        [
+          "Deliver",
+          "Optional delivery to Notion, Telegram or email"
+        ]
+      ],
+      "disc": "/project-discs/daily-news.webp?v=f2b7854781",
+      "created_at": "2026-04-11T17:45:19Z",
+      "created_date": "2026-04-12",
+      "created_at_source": "https://api.github.com/repos/Aloysius8895/daily-news"
+    },
+    {
+      "slug": "peer-tutoring",
+      "name": "Peer Tutoring",
+      "repo": "PSE",
+      "year": "2026",
+      "category": "EdTech × SDG 4",
+      "context": "Software Engineering assignment",
+      "stack": [
+        "Design",
+        "Planning",
+        "Testing"
+      ],
+      "team": "4 members",
+      "pitch": "Find the right tutor, faster",
+      "quote": "Find the right tutor faster",
+      "synopsis": "A peer tutoring platform prototype connecting students and tutors in support of SDG 4: Quality Education.",
+      "intro": "The platform matches students with tutors by subject, availability and preferences. Tutors can create profiles and list their expertise; students can search, review profiles and book sessions. This Principles of Software Engineering team project includes design, planning, testing and final deliverables.",
+      "features": [
+        [
+          "Matching",
+          "Match by subject, availability and learning preferences"
+        ],
+        [
+          "Profiles",
+          "Tutors create profiles and list their areas of expertise"
+        ],
+        [
+          "Booking",
+          "Students search tutors, review profiles and book sessions"
+        ],
+        [
+          "SDG",
+          "Support SDG 4: Quality Education"
+        ],
+        [
+          "Process",
+          "Design, planning, testing and final project delivery"
+        ]
+      ],
+      "disc": "/project-discs/peer-tutoring.webp?v=d09faea788",
+      "created_at": "2026-03-04T12:29:34Z",
+      "created_date": "2026-03-04",
+      "created_at_source": "https://api.github.com/repos/Aloysius8895/PSE"
+    }
+  ]
+}

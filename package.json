@@ -1,0 +1,17 @@
+{
+  "name": "aloy-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --use-system-ca --env-file-if-exists=.env admin-server.mjs",
+    "start": "node --use-system-ca --env-file-if-exists=.env admin-server.mjs",
+    "build": "python tools/build_vercel.py",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node tools/check_syntax.mjs"
+  },
+  "engines": { "node": "24.x" },
+  "dependencies": {
+    "sharp": "0.34.5"
+  }
+}

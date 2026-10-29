@@ -1,0 +1,10 @@
+/* Approved Chill wordmark, shared by the gallery and project pages. */
+.chill-logo {
+  display: block;
+  font-family: Ppeiko, Georgia, serif;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: -.05em;
+  line-height: 1;
+  white-space: nowrap;
+}

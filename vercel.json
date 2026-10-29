@@ -1,0 +1,18 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "installCommand": "npm ci",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "functions": { "api/admin.js": { "maxDuration": 60 } },
+  "rewrites": [ { "source": "/api/admin/:route*", "destination": "/api/admin?route=:route*" } ],
+  "headers": [
+    { "source": "/admin/:path*", "headers": [
+      { "key": "X-Robots-Tag", "value": "noindex, nofollow" },
+      { "key": "X-Frame-Options", "value": "DENY" },
+      { "key": "Referrer-Policy", "value": "no-referrer" }
+    ] }
+  ]
+}

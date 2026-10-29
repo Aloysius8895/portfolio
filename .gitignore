@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.local-admin/
+.admin-verification/
+.build-tests/
+.vercel/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+# Local verification records and derived editable texture exports.
+template3/verification/
+template3/docs/cleanup-*.json
+template3/site/project-discs/*.svg

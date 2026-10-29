@@ -1,0 +1,699 @@
+{
+  "source": "https://a24.raviklaassens.com/",
+  "captured_date": "2026-10-28",
+  "assets": [
+    {
+      "url": "https://a24.raviklaassens.com",
+      "local_url": "/",
+      "file": "index.html",
+      "bytes": 58684
+    },
+    {
+      "url": "https://a24.raviklaassens.com/",
+      "local_url": "/",
+      "file": "index.html",
+      "bytes": 59352
+    },
+    {
+      "url": "https://a24.raviklaassens.com/_astro/ExportPage.DV5vD961.css",
+      "local_url": "/_astro/ExportPage.DV5vD961.css",
+      "file": "_astro/ExportPage.DV5vD961.css",
+      "bytes": 167496
+    },
+    {
+      "url": "https://a24.raviklaassens.com/_astro/ExportPage.astro_astro_type_script_index_0_lang.DQlUkOwJ.js",
+      "local_url": "/_astro/ExportPage.astro_astro_type_script_index_0_lang.DQlUkOwJ.js",
+      "file": "_astro/ExportPage.astro_astro_type_script_index_0_lang.DQlUkOwJ.js",
+      "bytes": 312
+    },
+    {
+      "url": "https://a24.raviklaassens.com/_astro/RectAreaLightUniformsLib.DJtkkHJU.js",
+      "local_url": "/_astro/RectAreaLightUniformsLib.DJtkkHJU.js",
+      "file": "_astro/RectAreaLightUniformsLib.DJtkkHJU.js",
+      "bytes": 247280
+    },
+    {
+      "url": "https://a24.raviklaassens.com/_astro/bootstrap.dru0MhUJ.js",
+      "local_url": "/_astro/bootstrap.dru0MhUJ.js",
+      "file": "_astro/bootstrap.dru0MhUJ.js",
+      "bytes": 177648
+    },
+    {
+      "url": "https://a24.raviklaassens.com/_astro/main.qdXy8l6N.js",
+      "local_url": "/_astro/main.qdXy8l6N.js",
+      "file": "_astro/main.qdXy8l6N.js",
+      "bytes": 263989
+    },
+    {
+      "url": "https://a24.raviklaassens.com/_astro/preload-helper.CxFQXtKk.js",
+      "local_url": "/_astro/preload-helper.CxFQXtKk.js",
+      "file": "_astro/preload-helper.CxFQXtKk.js",
+      "bytes": 1342
+    },
+    {
+      "url": "https://a24.raviklaassens.com/_astro/three.module.B1_OyRqk.js",
+      "local_url": "/_astro/three.module.B1_OyRqk.js",
+      "file": "_astro/three.module.B1_OyRqk.js",
+      "bytes": 684230
+    },
+    {
+      "url": "https://a24.raviklaassens.com/_astro/three.module.CFOTFKy5.js",
+      "local_url": "/_astro/three.module.CFOTFKy5.js",
+      "file": "_astro/three.module.CFOTFKy5.js",
+      "bytes": 12853
+    },
+    {
+      "url": "https://a24.raviklaassens.com/fonts/PPEiko-Regular.woff2",
+      "local_url": "/fonts/PPEiko-Regular.woff2",
+      "file": "fonts/PPEiko-Regular.woff2",
+      "bytes": 117028
+    },
+    {
+      "url": "https://a24.raviklaassens.com/fonts/PPMuseum-Regular.woff2",
+      "local_url": "/fonts/PPMuseum-Regular.woff2",
+      "file": "fonts/PPMuseum-Regular.woff2",
+      "bytes": 50500
+    },
+    {
+      "url": "https://a24.raviklaassens.com/fonts/PPNeueMontreal-Medium.woff2",
+      "local_url": "/fonts/PPNeueMontreal-Medium.woff2",
+      "file": "fonts/PPNeueMontreal-Medium.woff2",
+      "bytes": 83616
+    },
+    {
+      "url": "https://a24.raviklaassens.com/images/a24thumb.png",
+      "local_url": "/images/a24thumb.png",
+      "file": "images/a24thumb.png",
+      "bytes": 530609
+    },
+    {
+      "url": "https://a24.raviklaassens.com/images/favicon.png",
+      "local_url": "/images/favicon.png",
+      "file": "images/favicon.png",
+      "bytes": 746
+    },
+    {
+      "url": "https://a24.raviklaassens.com/images/grid-tile.svg",
+      "local_url": "/images/grid-tile.svg",
+      "file": "images/grid-tile.svg",
+      "bytes": 601
+    },
+    {
+      "url": "https://a24.raviklaassens.com/images/noise_1noise.avif",
+      "local_url": "/images/noise_1noise.avif",
+      "file": "images/noise_1noise.avif",
+      "bytes": 35686
+    },
+    {
+      "url": "https://a24.raviklaassens.com/images/webclip.png",
+      "local_url": "/images/webclip.png",
+      "file": "images/webclip.png",
+      "bytes": 6693
+    },
+    {
+      "url": "https://a24.raviklaassens.com/production/backrooms",
+      "local_url": "/production/backrooms",
+      "file": "production/backrooms/index.html",
+      "bytes": 69808
+    },
+    {
+      "url": "https://a24.raviklaassens.com/production/beef",
+      "local_url": "/production/beef",
+      "file": "production/beef/index.html",
+      "bytes": 70825
+    },
+    {
+      "url": "https://a24.raviklaassens.com/production/dreaming-whilst-black",
+      "local_url": "/production/dreaming-whilst-black",
+      "file": "production/dreaming-whilst-black/index.html",
+      "bytes": 71720
+    },
+    {
+      "url": "https://a24.raviklaassens.com/production/euphoria",
+      "local_url": "/production/euphoria",
+      "file": "production/euphoria/index.html",
+      "bytes": 71008
+    },
+    {
+      "url": "https://a24.raviklaassens.com/production/everything-everywhere-all-at-once",
+      "local_url": "/production/everything-everywhere-all-at-once",
+      "file": "production/everything-everywhere-all-at-once/index.html",
+      "bytes": 72801
+    },
+    {
+      "url": "https://a24.raviklaassens.com/production/ex-machina",
+      "local_url": "/production/ex-machina",
+      "file": "production/ex-machina/index.html",
+      "bytes": 70480
+    },
+    {
+      "url": "https://a24.raviklaassens.com/production/hazbin-hotel",
+      "local_url": "/production/hazbin-hotel",
+      "file": "production/hazbin-hotel/index.html",
+      "bytes": 69958
+    },
+    {
+      "url": "https://a24.raviklaassens.com/production/hereditary",
+      "local_url": "/production/hereditary",
+      "file": "production/hereditary/index.html",
+      "bytes": 71209
+    },
+    {
+      "url": "https://a24.raviklaassens.com/production/irma-vep",
+      "local_url": "/production/irma-vep",
+      "file": "production/irma-vep/index.html",
+      "bytes": 70252
+    },
+    {
+      "url": "https://a24.raviklaassens.com/production/lady-bird",
+      "local_url": "/production/lady-bird",
+      "file": "production/lady-bird/index.html",
+      "bytes": 72266
+    },
+    {
+      "url": "https://a24.raviklaassens.com/production/marty-supreme",
+      "local_url": "/production/marty-supreme",
+      "file": "production/marty-supreme/index.html",
+      "bytes": 71752
+    },
+    {
+      "url": "https://a24.raviklaassens.com/production/mo",
+      "local_url": "/production/mo",
+      "file": "production/mo/index.html",
+      "bytes": 70409
+    },
+    {
+      "url": "https://a24.raviklaassens.com/production/ramy",
+      "local_url": "/production/ramy",
+      "file": "production/ramy/index.html",
+      "bytes": 70296
+    },
+    {
+      "url": "https://a24.raviklaassens.com/production/random-acts-of-flyness",
+      "local_url": "/production/random-acts-of-flyness",
+      "file": "production/random-acts-of-flyness/index.html",
+      "bytes": 70396
+    },
+    {
+      "url": "https://a24.raviklaassens.com/production/such-brave-girls",
+      "local_url": "/production/such-brave-girls",
+      "file": "production/such-brave-girls/index.html",
+      "bytes": 70008
+    },
+    {
+      "url": "https://a24.raviklaassens.com/production/sunny",
+      "local_url": "/production/sunny",
+      "file": "production/sunny/index.html",
+      "bytes": 70899
+    },
+    {
+      "url": "https://a24.raviklaassens.com/production/the-brutalist",
+      "local_url": "/production/the-brutalist",
+      "file": "production/the-brutalist/index.html",
+      "bytes": 72877
+    },
+    {
+      "url": "https://a24.raviklaassens.com/production/the-curse",
+      "local_url": "/production/the-curse",
+      "file": "production/the-curse/index.html",
+      "bytes": 70919
+    },
+    {
+      "url": "https://a24.raviklaassens.com/production/the-invite",
+      "local_url": "/production/the-invite",
+      "file": "production/the-invite/index.html",
+      "bytes": 70762
+    },
+    {
+      "url": "https://a24.raviklaassens.com/production/the-smashing-machine",
+      "local_url": "/production/the-smashing-machine",
+      "file": "production/the-smashing-machine/index.html",
+      "bytes": 70095
+    },
+    {
+      "url": "https://a24.raviklaassens.com/production/the-sympathizer",
+      "local_url": "/production/the-sympathizer",
+      "file": "production/the-sympathizer/index.html",
+      "bytes": 72010
+    },
+    {
+      "url": "https://a24.raviklaassens.com/production/the-zone-of-interest",
+      "local_url": "/production/the-zone-of-interest",
+      "file": "production/the-zone-of-interest/index.html",
+      "bytes": 70222
+    },
+    {
+      "url": "https://a24.raviklaassens.com/production/tony",
+      "local_url": "/production/tony",
+      "file": "production/tony/index.html",
+      "bytes": 71307
+    },
+    {
+      "url": "https://a24.raviklaassens.com/production/uncut-gems",
+      "local_url": "/production/uncut-gems",
+      "file": "production/uncut-gems/index.html",
+      "bytes": 72788
+    },
+    {
+      "url": "https://a24.raviklaassens.com/television",
+      "local_url": "/television",
+      "file": "television/index.html",
+      "bytes": 59819
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/backrooms/disc.webp?v=7",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/backrooms/disc.webp?v=7",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/backrooms/disc__ea267a8973.webp",
+      "bytes": 184422
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/backrooms/trailer.webp?v=8",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/backrooms/trailer.webp?v=8",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/backrooms/trailer__33c5143d29.webp",
+      "bytes": 333172
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/backrooms/vector.webp",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/backrooms/vector.webp",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/backrooms/vector.webp",
+      "bytes": 26328
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/everything-everywhere-all-at-once/disc.webp?v=7",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/everything-everywhere-all-at-once/disc.webp?v=7",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/everything-everywhere-all-at-once/disc__ea267a8973.webp",
+      "bytes": 164254
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/everything-everywhere-all-at-once/trailer.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/everything-everywhere-all-at-once/trailer.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/everything-everywhere-all-at-once/trailer__b7debde3a9.webp",
+      "bytes": 190512
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/everything-everywhere-all-at-once/vector.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/everything-everywhere-all-at-once/vector.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/everything-everywhere-all-at-once/vector__b7debde3a9.webp",
+      "bytes": 40186
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/ex-machina/disc.webp?v=7",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/ex-machina/disc.webp?v=7",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/ex-machina/disc__ea267a8973.webp",
+      "bytes": 132892
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/ex-machina/trailer.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/ex-machina/trailer.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/ex-machina/trailer__b7debde3a9.webp",
+      "bytes": 190338
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/ex-machina/vector.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/ex-machina/vector.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/ex-machina/vector__b7debde3a9.webp",
+      "bytes": 10634
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/hereditary/disc.webp?v=7",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/hereditary/disc.webp?v=7",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/hereditary/disc__ea267a8973.webp",
+      "bytes": 161744
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/hereditary/trailer.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/hereditary/trailer.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/hereditary/trailer__b7debde3a9.webp",
+      "bytes": 180928
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/hereditary/vector.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/hereditary/vector.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/hereditary/vector__b7debde3a9.webp",
+      "bytes": 13178
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/lady-bird/disc.webp?v=7",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/lady-bird/disc.webp?v=7",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/lady-bird/disc__ea267a8973.webp",
+      "bytes": 142980
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/lady-bird/trailer.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/lady-bird/trailer.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/lady-bird/trailer__b7debde3a9.webp",
+      "bytes": 132510
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/lady-bird/vector.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/lady-bird/vector.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/lady-bird/vector__b7debde3a9.webp",
+      "bytes": 80330
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/marty-supreme/disc.webp?v=7",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/marty-supreme/disc.webp?v=7",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/marty-supreme/disc__ea267a8973.webp",
+      "bytes": 167178
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/marty-supreme/trailer.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/marty-supreme/trailer.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/marty-supreme/trailer__b7debde3a9.webp",
+      "bytes": 191574
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/marty-supreme/vector.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/marty-supreme/vector.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/marty-supreme/vector__b7debde3a9.webp",
+      "bytes": 21000
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/the-brutalist/disc.webp?v=7",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/the-brutalist/disc.webp?v=7",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/the-brutalist/disc__ea267a8973.webp",
+      "bytes": 178346
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/the-brutalist/trailer.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/the-brutalist/trailer.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/the-brutalist/trailer__b7debde3a9.webp",
+      "bytes": 174278
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/the-brutalist/vector.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/the-brutalist/vector.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/the-brutalist/vector__b7debde3a9.webp",
+      "bytes": 35384
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/the-invite/disc.webp?v=7",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/the-invite/disc.webp?v=7",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/the-invite/disc__ea267a8973.webp",
+      "bytes": 138864
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/the-invite/trailer.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/the-invite/trailer.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/the-invite/trailer__b7debde3a9.webp",
+      "bytes": 165140
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/the-invite/vector.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/the-invite/vector.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/the-invite/vector__b7debde3a9.webp",
+      "bytes": 12704
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/the-smashing-machine/disc.webp?v=7",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/the-smashing-machine/disc.webp?v=7",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/the-smashing-machine/disc__ea267a8973.webp",
+      "bytes": 85820
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/the-smashing-machine/trailer.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/the-smashing-machine/trailer.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/the-smashing-machine/trailer__b7debde3a9.webp",
+      "bytes": 158042
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/the-smashing-machine/vector.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/the-smashing-machine/vector.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/the-smashing-machine/vector__b7debde3a9.webp",
+      "bytes": 25978
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/the-zone-of-interest/disc.webp?v=7",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/the-zone-of-interest/disc.webp?v=7",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/the-zone-of-interest/disc__ea267a8973.webp",
+      "bytes": 132828
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/the-zone-of-interest/trailer.webp?v=9",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/the-zone-of-interest/trailer.webp?v=9",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/the-zone-of-interest/trailer__3358d74e0b.webp",
+      "bytes": 367528
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/the-zone-of-interest/vector.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/the-zone-of-interest/vector.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/the-zone-of-interest/vector__b7debde3a9.webp",
+      "bytes": 23876
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/tony/disc.webp?v=7",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/tony/disc.webp?v=7",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/tony/disc__ea267a8973.webp",
+      "bytes": 168126
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/tony/trailer.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/tony/trailer.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/tony/trailer__b7debde3a9.webp",
+      "bytes": 114130
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/tony/vector.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/tony/vector.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/tony/vector__b7debde3a9.webp",
+      "bytes": 6276
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/uncut-gems/disc.webp?v=7",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/uncut-gems/disc.webp?v=7",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/uncut-gems/disc__ea267a8973.webp",
+      "bytes": 180928
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/uncut-gems/trailer.webp?v=8",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/uncut-gems/trailer.webp?v=8",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/uncut-gems/trailer__33c5143d29.webp",
+      "bytes": 355774
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/films/uncut-gems/vector.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/films/uncut-gems/vector.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/films/uncut-gems/vector__b7debde3a9.webp",
+      "bytes": 15740
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/beef/disc.webp?v=7",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/beef/disc.webp?v=7",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/beef/disc__ea267a8973.webp",
+      "bytes": 170256
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/beef/trailer.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/beef/trailer.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/beef/trailer__b7debde3a9.webp",
+      "bytes": 189478
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/beef/vector.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/beef/vector.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/beef/vector__b7debde3a9.webp",
+      "bytes": 25592
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/dreaming-whilst-black/disc.webp?v=7",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/dreaming-whilst-black/disc.webp?v=7",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/dreaming-whilst-black/disc__ea267a8973.webp",
+      "bytes": 173804
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/dreaming-whilst-black/trailer.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/dreaming-whilst-black/trailer.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/dreaming-whilst-black/trailer__b7debde3a9.webp",
+      "bytes": 155146
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/dreaming-whilst-black/vector.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/dreaming-whilst-black/vector.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/dreaming-whilst-black/vector__b7debde3a9.webp",
+      "bytes": 15126
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/euphoria/disc.webp?v=7",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/euphoria/disc.webp?v=7",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/euphoria/disc__ea267a8973.webp",
+      "bytes": 170746
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/euphoria/trailer.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/euphoria/trailer.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/euphoria/trailer__b7debde3a9.webp",
+      "bytes": 140432
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/euphoria/vector.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/euphoria/vector.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/euphoria/vector__b7debde3a9.webp",
+      "bytes": 32620
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/hazbin-hotel/disc.webp?v=7",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/hazbin-hotel/disc.webp?v=7",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/hazbin-hotel/disc__ea267a8973.webp",
+      "bytes": 157018
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/hazbin-hotel/trailer.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/hazbin-hotel/trailer.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/hazbin-hotel/trailer__b7debde3a9.webp",
+      "bytes": 194708
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/hazbin-hotel/vector.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/hazbin-hotel/vector.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/hazbin-hotel/vector__b7debde3a9.webp",
+      "bytes": 21820
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/irma-vep/disc.webp?v=7",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/irma-vep/disc.webp?v=7",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/irma-vep/disc__ea267a8973.webp",
+      "bytes": 152078
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/irma-vep/trailer.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/irma-vep/trailer.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/irma-vep/trailer__b7debde3a9.webp",
+      "bytes": 133446
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/irma-vep/vector.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/irma-vep/vector.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/irma-vep/vector__b7debde3a9.webp",
+      "bytes": 35568
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/mo/disc.webp?v=7",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/mo/disc.webp?v=7",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/mo/disc__ea267a8973.webp",
+      "bytes": 153442
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/mo/trailer.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/mo/trailer.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/mo/trailer__b7debde3a9.webp",
+      "bytes": 148492
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/mo/vector.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/mo/vector.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/mo/vector__b7debde3a9.webp",
+      "bytes": 4842
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/ramy/disc.webp?v=7",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/ramy/disc.webp?v=7",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/ramy/disc__ea267a8973.webp",
+      "bytes": 172782
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/ramy/trailer.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/ramy/trailer.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/ramy/trailer__b7debde3a9.webp",
+      "bytes": 183154
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/ramy/vector.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/ramy/vector.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/ramy/vector__b7debde3a9.webp",
+      "bytes": 27104
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/random-acts-of-flyness/disc.webp?v=7",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/random-acts-of-flyness/disc.webp?v=7",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/random-acts-of-flyness/disc__ea267a8973.webp",
+      "bytes": 165778
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/random-acts-of-flyness/trailer.webp?v=8",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/random-acts-of-flyness/trailer.webp?v=8",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/random-acts-of-flyness/trailer__33c5143d29.webp",
+      "bytes": 351514
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/random-acts-of-flyness/vector.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/random-acts-of-flyness/vector.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/random-acts-of-flyness/vector__b7debde3a9.webp",
+      "bytes": 24634
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/such-brave-girls/disc.webp?v=7",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/such-brave-girls/disc.webp?v=7",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/such-brave-girls/disc__ea267a8973.webp",
+      "bytes": 150704
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/such-brave-girls/trailer.webp?v=8",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/such-brave-girls/trailer.webp?v=8",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/such-brave-girls/trailer__33c5143d29.webp",
+      "bytes": 225468
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/such-brave-girls/vector.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/such-brave-girls/vector.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/such-brave-girls/vector__b7debde3a9.webp",
+      "bytes": 21538
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/sunny/disc.webp?v=7",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/sunny/disc.webp?v=7",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/sunny/disc__ea267a8973.webp",
+      "bytes": 147560
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/sunny/trailer.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/sunny/trailer.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/sunny/trailer__b7debde3a9.webp",
+      "bytes": 162504
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/sunny/vector.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/sunny/vector.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/sunny/vector__b7debde3a9.webp",
+      "bytes": 13332
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/the-curse/disc.webp?v=7",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/the-curse/disc.webp?v=7",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/the-curse/disc__ea267a8973.webp",
+      "bytes": 154116
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/the-curse/trailer.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/the-curse/trailer.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/the-curse/trailer__b7debde3a9.webp",
+      "bytes": 166516
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/the-curse/vector.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/the-curse/vector.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/the-curse/vector__b7debde3a9.webp",
+      "bytes": 25556
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/the-sympathizer/disc.webp?v=7",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/the-sympathizer/disc.webp?v=7",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/the-sympathizer/disc__ea267a8973.webp",
+      "bytes": 158258
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/the-sympathizer/trailer.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/the-sympathizer/trailer.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/the-sympathizer/trailer__b7debde3a9.webp",
+      "bytes": 148710
+    },
+    {
+      "url": "https://raviklaassens.b-cdn.net/a24/tv/the-sympathizer/vector.webp?v=4",
+      "local_url": "/external/raviklaassens.b-cdn.net/a24/tv/the-sympathizer/vector.webp?v=4",
+      "file": "external/raviklaassens.b-cdn.net/a24/tv/the-sympathizer/vector__b7debde3a9.webp",
+      "bytes": 23680
+    }
+  ],
+  "failures": {
+    "https://a24.raviklaassens.com/necolas/normalize.css": "404 Client Error: Not Found for url: https://a24.raviklaassens.com/necolas/normalize.css"
+  }
+}

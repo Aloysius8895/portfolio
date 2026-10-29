@@ -1,0 +1,32 @@
+{
+  "source_sha256": "02897a1bcf68fbd445e595f35e060662c08f9192fba5e19ccef70f87bece1343",
+  "fps": 24.0,
+  "frameCount": 240,
+  "defaultFrame": 12,
+  "poster": "/hero/assets/final-atlas/poster.webp",
+  "background": "#f2f2f2",
+  "variants": {
+    "desktop": {
+      "cellSize": 384,
+      "grid": 8,
+      "urls": [
+        "/hero/assets/final-atlas/desktop-0.webp?v=63fc99fa24",
+        "/hero/assets/final-atlas/desktop-1.webp?v=57572389a7",
+        "/hero/assets/final-atlas/desktop-2.webp?v=73b58c2d2e",
+        "/hero/assets/final-atlas/desktop-3.webp?v=b7400967de"
+      ],
+      "textureBytes": 150994944
+    },
+    "mobile": {
+      "cellSize": 256,
+      "grid": 8,
+      "urls": [
+        "/hero/assets/final-atlas/mobile-0.webp?v=9561bc6139",
+        "/hero/assets/final-atlas/mobile-1.webp?v=a8626818d2",
+        "/hero/assets/final-atlas/mobile-2.webp?v=3ff6b70557",
+        "/hero/assets/final-atlas/mobile-3.webp?v=7b1f032b15"
+      ],
+      "textureBytes": 67108864
+    }
+  }
+}

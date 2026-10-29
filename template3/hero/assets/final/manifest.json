@@ -1,0 +1,53 @@
+{
+  "source": "C:\\maven\\portfolio\\final.mp4",
+  "source_sha256": "02897a1bcf68fbd445e595f35e060662c08f9192fba5e19ccef70f87bece1343",
+  "fps": 24.0,
+  "size": [
+    640,
+    640
+  ],
+  "source_bounds": [
+    327,
+    60,
+    1019,
+    609
+  ],
+  "background": "#f2f2f2",
+  "clips": {
+    "center": {
+      "start_frame": 0,
+      "end_frame_exclusive": 39,
+      "frames": 39,
+      "duration": 1.625,
+      "src": "/hero/assets/final/center.mp4"
+    },
+    "left": {
+      "start_frame": 39,
+      "end_frame_exclusive": 77,
+      "frames": 38,
+      "duration": 1.5833333333333333,
+      "src": "/hero/assets/final/left.mp4"
+    },
+    "down": {
+      "start_frame": 77,
+      "end_frame_exclusive": 125,
+      "frames": 48,
+      "duration": 2.0,
+      "src": "/hero/assets/final/down.mp4"
+    },
+    "right": {
+      "start_frame": 136,
+      "end_frame_exclusive": 183,
+      "frames": 47,
+      "duration": 1.9583333333333333,
+      "src": "/hero/assets/final/right.mp4"
+    },
+    "up": {
+      "start_frame": 196,
+      "end_frame_exclusive": 240,
+      "frames": 44,
+      "duration": 1.8333333333333333,
+      "src": "/hero/assets/final/up.mp4"
+    }
+  }
+}

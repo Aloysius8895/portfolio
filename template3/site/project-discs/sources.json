@@ -1,0 +1,164 @@
+{
+  "kerjayaku": {
+    "source": "KerjayaKu cartoon career island.png",
+    "sha256": "95420df2dafefa32658873ab3d4ad7643a5da5dbb61706b9aee0584b5b352264",
+    "texture_sha256": "8a3dd4054fea19f9dc171cfda8559a5b65002d1291165fd3ac9a8ff3c4cd9538",
+    "texture": "/project-discs/kerjayaku.webp?v=8a3dd4054f",
+    "outline_center": [
+      847.762451171875,
+      549.5845336914062
+    ],
+    "outline_axes": [
+      953.5613403320312,
+      1189.78369140625
+    ],
+    "hub": [
+      790.4873046875,
+      516.587646484375
+    ]
+  },
+  "itfits": {
+    "source": "ItFitS_ Tailored fit by AI.png",
+    "sha256": "9c3cf9e636541dc397061d2699cf122ac6bf8c8a716b31c76e476bf3a963e62c",
+    "texture_sha256": "5cff0f6c51492a6802a004fe02b6ecca6b2b6da330a4369dba4e1a25058c5c2d",
+    "texture": "/project-discs/itfits.webp?v=5cff0f6c51",
+    "outline_center": [
+      845.6153564453125,
+      547.025634765625
+    ],
+    "outline_axes": [
+      924.63134765625,
+      1198.7137451171875
+    ],
+    "hub": [
+      793.9435424804688,
+      512.074462890625
+    ]
+  },
+  "seceff": {
+    "source": "SecEff_ Server clouds and construction.png",
+    "sha256": "2af5204904580e29a310ef4836ed26eb4a2321d296daa01b9e8b4942edd02261",
+    "texture_sha256": "44ba743ed530cc44aa6f1afdae811b0f78ae3552dc40c345036b35a2bc5fa927",
+    "texture": "/project-discs/seceff.webp?v=44ba743ed5",
+    "outline_center": [
+      858.6124267578125,
+      542.3710327148438
+    ],
+    "outline_axes": [
+      931.8094482421875,
+      1179.994384765625
+    ],
+    "hub": [
+      803.7694702148438,
+      506.70025634765625
+    ]
+  },
+  "ecolink": {
+    "source": "EcoLink_ Mentors and founders connected.png",
+    "sha256": "2a7aa06c2eb45acb9bc9ee8d99f1100c09678c3a7585c4dd1487d9676cbc3a47",
+    "texture_sha256": "52dac42a51d8a057da1e64b01793159d5107c951e91876d4cb18e9f5f11cb36e",
+    "texture": "/project-discs/ecolink.webp?v=52dac42a51",
+    "outline_center": [
+      859.1216430664062,
+      539.8095092773438
+    ],
+    "outline_axes": [
+      903.0359497070312,
+      1189.2169189453125
+    ],
+    "hub": [
+      817.0181274414062,
+      497.4945068359375
+    ]
+  },
+  "emptyclass": {
+    "source": "EmptyClass_ Quiet Study Spaces.png",
+    "sha256": "17036c2fe9ed752ac810835ec71c4f5af033f02d973ef63f38a12abc6553fe85",
+    "texture_sha256": "fb6c73ea66e0669b5f6b505d114d857042c32a0447340680f5e4e651011de723",
+    "texture": "/project-discs/emptyclass.webp?v=fb6c73ea66",
+    "outline_center": [
+      828.5604858398438,
+      534.4443359375
+    ],
+    "outline_axes": [
+      927.5233764648438,
+      1175.541015625
+    ],
+    "hub": [
+      776.5609741210938,
+      499.2810363769531
+    ]
+  },
+  "enervision-ai": {
+    "source": "EnerVision AI_ Smart Home Dusk.png",
+    "sha256": "f3c5acc26f692ac0061db4a81487154c88e24fefa13675ac58b1ed1427e7586f",
+    "texture_sha256": "54154fbb75218d793c2c5d7a3b2ffb011008b5a8beae461f6087cfe15e747aee",
+    "texture": "/project-discs/enervision-ai.webp?v=54154fbb75",
+    "outline_center": [
+      830.6066284179688,
+      535.6807861328125
+    ],
+    "outline_axes": [
+      931.5634155273438,
+      1187.135986328125
+    ],
+    "hub": [
+      787.8095703125,
+      496.9560241699219
+    ]
+  },
+  "daily-news": {
+    "source": "Daily News_ Newsprint Disc Study.png",
+    "sha256": "bf64903fafe1f7ab8283ebe7297719fc6b176d75b9307b65d9165e8825e58627",
+    "texture_sha256": "f2b78547812b024c433ad6e5caef6bc5dc65b8b0daa9a86861b23f465616a574",
+    "texture": "/project-discs/daily-news.webp?v=f2b7854781",
+    "outline_center": [
+      854.9263916015625,
+      557.563232421875
+    ],
+    "outline_axes": [
+      941.93603515625,
+      1205.3460693359375
+    ],
+    "hub": [
+      795.700927734375,
+      505.10162353515625
+    ]
+  },
+  "metrix-ai": {
+    "source": "MetriX AI smart sampling rover.png",
+    "sha256": "b1e55342621235a1169288f322f4e7e235e39f244a2c6d88b2720e6ea731da04",
+    "texture_sha256": "6390577fceb8d18d57ce6843028c533ea50c32e7fad17ae1c6a84d5dc9f2001e",
+    "texture": "/project-discs/metrix-ai.webp?v=6390577fce",
+    "outline_center": [
+      817.84375,
+      530.1734619140625
+    ],
+    "outline_axes": [
+      881.643798828125,
+      1136.8453369140625
+    ],
+    "hub": [
+      773.4605712890625,
+      483.59478759765625
+    ]
+  },
+  "peer-tutoring": {
+    "source": "Peer Tutoring_ Learning in Sync.png",
+    "sha256": "c00e780b91cfb6b96cc97fbc967002708dbc17837926a2b8d89ce73565d82ff7",
+    "texture_sha256": "d09faea78863d5e756f5c10506083b54fc0dceb49ce2ea7154ae82984cbd79f3",
+    "texture": "/project-discs/peer-tutoring.webp?v=d09faea788",
+    "outline_center": [
+      839.470703125,
+      542.8577880859375
+    ],
+    "outline_axes": [
+      931.2320556640625,
+      1193.3328857421875
+    ],
+    "hub": [
+      789.6348876953125,
+      510.3985595703125
+    ]
+  }
+}

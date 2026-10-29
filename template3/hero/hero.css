@@ -1,0 +1,176 @@
+/* Intro cover: character on the left, self-introduction on the right.
+   Background, grain, type and divider rows follow the template3 disc page. */
+.aloy-hero {
+  --aloy-bg: #f2f2f2;
+  --aloy-ink: #000;
+  --aloy-muted: #5c5c5c;
+  --aloy-line: #000;
+  --aloy-pad: 1.25em;
+  --aloy-ease: cubic-bezier(.76, 0, .24, 1);
+  --aloy-sans: Ppneuemontreal, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", Arial, sans-serif;
+  --aloy-serif: Ppeiko, "Songti SC", "SimSun", Georgia, serif;
+  /* Transparent and below the page grain (99) and nav (100): the intro sits
+     on the disc page's own background instead of being a sheet over it. */
+  position: fixed; inset: 0; z-index: 98;
+  display: grid; grid-template-columns: minmax(0, 56fr) minmax(0, 44fr);
+  background: transparent; color: var(--aloy-ink);
+  font-family: var(--aloy-sans); font-weight: 500;
+  overflow: hidden; overscroll-behavior: contain;
+}
+html:not(.aloy-js) .aloy-hero { display: none; }
+.aloy-hero.is-dismissed { visibility: hidden; }
+
+/* One-page motion. hero.js sets --aloy-out (intro leaving) and --aloy-in
+   (discs arriving) from a single scroll-like progress. The character drifts
+   up slower than the copy (parallax); the discs rise from below. */
+.aloy-hero__media {
+  transform: translate3d(0, calc(var(--aloy-out, 0) * -10vh), 0) scale(calc(1 - var(--aloy-out, 0) * .06));
+  transform-origin: 50% 85%;
+  opacity: calc(1 - var(--aloy-out, 0) * 1.15);
+  will-change: transform, opacity;
+}
+.aloy-hero__intro {
+  transform: translate3d(0, calc(var(--aloy-out, 0) * -24vh), 0);
+  opacity: calc(1 - var(--aloy-out, 0) * 1.5);
+  will-change: transform, opacity;
+}
+html.aloy-js:not(.aloy-on-discs) :is(.experience_info, .testimonial_wrap) {
+  opacity: var(--aloy-in, 0) !important;
+  transform: translate3d(0, calc((1 - var(--aloy-in, 0)) * 14vh), 0) !important;
+}
+/* The WebGL canvas clips the discs at its own box, so it barely moves and
+   never scales: a shifted or shrunken box shows as straight cut lines. */
+html.aloy-js:not(.aloy-on-discs) [data-disc-canvas] {
+  opacity: var(--aloy-in, 0) !important;
+  transform: translate3d(0, calc((1 - var(--aloy-in, 0)) * 3vh), 0) !important;
+}
+html.aloy-js:not(.aloy-on-discs) :is(.nav, .aloy-return) {
+  opacity: var(--aloy-in, 0) !important; pointer-events: none !important;
+}
+
+/* Individual reveal layers preserve the gallery's original 3D transforms.
+   No JS or reduced motion leaves all disc content immediately readable. */
+@media (prefers-reduced-motion: no-preference) {
+  html.aloy-js .aloy-disc-pending { opacity: 0; translate: 0 18px; }
+}
+
+/* The stills have transparency; hardware-decoded clips use the same page grey.
+   The shared grain overlays both layers, keeping the background continuous. */
+.aloy-hero__media { position: relative; overflow: hidden; min-height: 0; }
+.aloy-hero__media.is-live .aloy-hero__poster { opacity: 0; }
+.aloy-hero__media > img, .aloy-hero__media > canvas {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: contain; pointer-events: none; background: transparent; max-width: none;
+}
+.aloy-hero__poster { z-index: 0; transition: opacity .18s ease-out; }
+.aloy-expression-canvas { z-index: 1; opacity: 0; transition: opacity .12s ease-out; }
+.aloy-expression-canvas.is-active { opacity: 1; }
+
+/* Intro column */
+.aloy-hero__intro {
+  position: relative; z-index: 2; min-width: 0;
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 5.5em clamp(1.25em, 4vw, 4.5em) 5.5em clamp(1em, 2vw, 2.5em);
+}
+.aloy-eyebrow, .aloy-label, .aloy-hint, .aloy-next, .aloy-return {
+  font-family: var(--aloy-sans); font-size: 10px; letter-spacing: .14em; text-transform: uppercase;
+}
+.aloy-eyebrow { margin: 0 0 1.4em; }
+.aloy-name {
+  margin: 0; font-family: var(--aloy-serif); font-weight: 400;
+  font-size: clamp(42px, 4.8vw, 82px); line-height: 1.05; letter-spacing: -.035em;
+  text-wrap: balance; max-width: 100%; margin-bottom: .5em; word-spacing: .06em;
+}
+.aloy-rows { margin: 0; }
+.aloy-row {
+  display: grid; grid-template-columns: 7.5em minmax(0, 1fr); gap: 1em;
+  border-top: 1px solid var(--aloy-line); padding: .75em 0 1.1em;
+}
+.aloy-label { padding-top: .35em; }
+.aloy-value { margin: 0; font-size: 14px; line-height: 1.75; letter-spacing: 0; color: var(--aloy-ink); }
+.aloy-value a { color: inherit; text-decoration: underline; text-underline-offset: .2em; }
+.aloy-value a:hover { color: var(--aloy-muted); }
+
+.aloy-picker { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: 2em; }
+.aloy-hint { color: var(--aloy-muted); max-width: 24em; line-height: 1.5; }
+.aloy-buttons { display: flex; gap: 6px; flex-shrink: 0; }
+.aloy-buttons button {
+  width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--aloy-ink);
+  background: transparent; color: var(--aloy-ink); font: inherit; font-size: 17px; line-height: 1;
+  font-variant-emoji: text;
+  display: grid; place-items: center; cursor: pointer; transition: background .2s, color .2s;
+}
+.aloy-buttons button:hover { background: #d6d3d1; }
+.aloy-buttons button[aria-pressed='true'] { background: var(--aloy-ink); color: var(--aloy-bg); }
+.aloy-buttons button:focus-visible, .aloy-next:focus-visible, .aloy-return:focus-visible, .aloy-value a:focus-visible {
+  outline: 1px solid var(--aloy-ink); outline-offset: 3px;
+}
+
+.aloy-next {
+  /* Centred under the intro column, clear of the character. */
+  position: absolute; z-index: 6; left: var(--aloy-cue-x, 78%); bottom: var(--aloy-pad); transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: .6em;
+  background: none; border: 0; padding: .5em 1em; color: var(--aloy-ink); cursor: pointer;
+  opacity: calc(1 - var(--aloy-out, 0) * 4);
+}
+.aloy-next::after {
+  content: ''; width: 1px; height: 28px; background: currentColor; transform-origin: top;
+  animation: aloy-cue 1.8s var(--aloy-ease) infinite;
+}
+@keyframes aloy-cue { 0% { transform: scaleY(0); } 50% { transform: scaleY(1); transform-origin: top; } 51% { transform-origin: bottom; } 100% { transform: scaleY(0); transform-origin: bottom; } }
+
+.aloy-return {
+  /* Bottom-left is the one corner the disc page leaves empty. */
+  position: fixed; z-index: 100; left: 1.25em; bottom: 1.25em;
+  background: #f2f2f2; color: #000; border: 1px solid #000; border-radius: 999px;
+  padding: .7em 1.3em; cursor: pointer; font-weight: 500;
+  transition: background .2s, color .2s;
+}
+.aloy-return:hover { background: #000; color: #f2f2f2; }
+.aloy-return[hidden] { display: none; }
+
+/* Tablet / short screens */
+@media (max-width: 991px) {
+  .aloy-hero { grid-template-columns: minmax(0, 52fr) minmax(0, 48fr); --aloy-cue-x: 76%; }
+  .aloy-row { grid-template-columns: 6em minmax(0, 1fr); }
+  .aloy-value { font-size: 13px; }
+}
+@media (min-width: 768px) and (max-height: 720px) {
+  .aloy-hero__intro { padding-block: 3.5em 4.5em; }
+  .aloy-name { font-size: clamp(32px, 4vw, 58px); }
+  .aloy-row { padding: .55em 0 .7em; }
+  .aloy-value { font-size: 12.5px; line-height: 1.6; }
+  .aloy-picker { margin-top: 1.2em; }
+}
+
+/* Phone: character above, introduction below */
+@media (max-width: 767px) {
+  .aloy-hero { grid-template-columns: 1fr; grid-template-rows: minmax(0, 44svh) minmax(0, 1fr); --aloy-cue-x: 50%; }
+  .aloy-hero__intro { justify-content: flex-start; padding: 0 1.25em 4.5em; }
+  .aloy-eyebrow { margin-bottom: .9em; font-size: 9px; }
+  .aloy-name { font-size: clamp(32px, 9vw, 52px); }
+  .aloy-row { grid-template-columns: 5.5em minmax(0, 1fr); padding: .5em 0 .6em; }
+  .aloy-row--about { display: none; }
+  .aloy-value { font-size: 12.5px; line-height: 1.6; }
+  .aloy-picker { margin-top: .9em; }
+  .aloy-hint { display: none; }
+}
+
+@media (max-width: 767px) and (max-height: 740px) {
+  .aloy-hero { grid-template-rows: minmax(0, 34svh) minmax(0, 1fr); }
+  .aloy-hero__intro { padding-bottom: 3.5em; }
+  .aloy-name { font-size: clamp(30px, 8.5vw, 42px); }
+  .aloy-value { font-size: 11.5px; line-height: 1.5; }
+}
+@media (min-width: 768px) and (max-height: 560px) {
+  .aloy-hero__intro { padding-block: 1.5em 5em; }
+  .aloy-row--about { display: none; }
+  .aloy-hint { display: none; }
+  .aloy-picker { margin-top: .8em; }
+  .aloy-value { font-size: 11.5px; line-height: 1.45; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aloy-expression-canvas, .aloy-hero__poster { transition: none; }
+  .aloy-next::after { animation: none; transform: none; }
+}

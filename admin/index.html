@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Chill — Project studio</title><link rel="stylesheet" href="/admin/admin.css"><script type="module" src="/admin/admin.js"></script></head>
+<body>
+<header class="topbar"><a class="wordmark" href="/" aria-label="View portfolio">Chill<span class="studio">PROJECT STUDIO</span></a><div class="top-actions"><a href="/" target="_blank" rel="noopener">View portfolio ↗</a><span id="identity"></span><button class="text-button" id="logout" hidden>Sign out</button></div></header>
+<div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+<div id="error" class="error" role="alert" hidden></div>
+<main>
+ <section id="gate" class="gate" hidden><p class="eyebrow">A SPACE FOR YOUR NEXT IDEA</p><h1>Your projects.<br>Your own little universe.</h1><p id="gate-message">Sign in to manage the work in your portfolio.</p><a class="button primary" id="login" href="/api/admin/login">Continue with GitHub ↗</a><p class="muted">Only the portfolio owner can access this studio.</p></section>
+ <section id="workspace" hidden>
+  <div id="listing">
+   <div class="page-heading"><div><p class="eyebrow">THE COLLECTION</p><h1>Work in progress.<br>Work worth sharing.</h1><p class="muted">A new project starts with a repository and a disk.</p></div><button id="add" class="button primary">＋ Add project</button></div>
+   <div class="collection-bar"><span id="count"></span><span>NEWEST PROJECTS FIRST</span></div><div id="project-list" class="project-list"></div>
+  </div>
+  <section id="editor" hidden>
+   <div class="editor-heading"><button id="back" class="text-button">← All projects</button><span id="editor-status" class="badge">NEW PROJECT</span></div>
+   <div class="page-heading editor-title"><div><p class="eyebrow">GIVE YOUR WORK A PLACE</p><h1 id="editor-title">Add a project.</h1></div><button id="preview" class="button">Preview project ↗</button></div>
+   <form id="project-form">
+    <div class="editor-grid"><div class="form-column">
+     <section class="panel"><div class="section-heading"><span class="step">01</span><h2>Start with GitHub</h2></div><label for="github">Repository URL <span class="required">*</span></label><div class="import-row"><input id="github" name="github" type="url" placeholder="https://github.com/you/your-project" required><button id="import" class="button" type="button">Import →</button></div><p class="help">We import public repository details. Review the English copy before publishing.</p><p class="help" id="created-date"></p><details id="readme-wrap" hidden><summary>Repository README · reference only</summary><pre id="readme"></pre></details></section>
+     <section class="panel"><div class="section-heading"><span class="step">02</span><h2>Tell its story</h2></div>
+      <div class="fields two"><label>Project name <span class="required">*</span><input name="name" maxlength="100" required></label><label>URL slug <span class="required">*</span><input name="slug" maxlength="80" pattern="[a-z0-9][a-z0-9-]*" placeholder="your-project" required><span class="help">Used in the project page address.</span></label></div>
+      <label>Short description <span class="required">*</span><textarea name="synopsis" rows="3" maxlength="700" required placeholder="What does it do, and who is it for?"></textarea></label>
+      <label>Introduction<textarea name="intro" rows="5" maxlength="6000" placeholder="The idea, the problem and what you built."></textarea></label>
+      <div class="fields two"><label>Category<input name="category" maxlength="80" placeholder="AI × Computer Vision"></label><label>Short headline<input name="pitch" maxlength="150" placeholder="One line that captures the project"></label></div>
+      <label>Technologies<input name="stack" placeholder="Python, PyTorch, React"><span class="help">Separate technologies with commas.</span></label>
+      <label>Live demo URL<input name="demo" type="url" maxlength="500" placeholder="https://..."></label>
+      <details class="more-details"><summary>Team, contribution and more details</summary><label>Context<input name="context" maxlength="200" placeholder="Hackathon, research or personal project"></label><div class="fields two"><label>Your role<input name="role" maxlength="200" placeholder="Your own contribution"></label><label>Team<input name="team" maxlength="200" placeholder="Team name, if applicable"></label></div><label>Highlight<input name="quote" maxlength="200"></label><label>Features<textarea name="features" rows="5" placeholder="Feature title | What it does&#10;Another feature | Why it matters"></textarea><span class="help">One feature per line, with a | between its title and description.</span></label></details>
+     </section>
+    </div><aside class="art-column"><section class="panel art-panel"><div class="section-heading"><span class="step">03</span><h2>Make it a disk</h2></div>
+     <div class="disk-stage" id="disk-stage"><img id="texture" alt="Normalized disk preview" hidden><div id="empty-art"><span>↗</span><p>Your next disk<br>belongs here.</p></div></div>
+     <label class="upload-label" for="image-file"><span>Choose disk image</span><span>PNG, JPG or WebP · up to 3 MB</span><input id="image-file" type="file" accept="image/png,image/jpeg,image/webp"></label><p id="file-name" class="help"></p><button id="adjust-saved" type="button" class="text-button" hidden>Adjust saved image ↻</button>
+     <details id="image-adjustments" hidden open><summary>Adjust the artwork</summary><img id="original" alt="Uploaded source image" class="source-image"><label>Image format<select id="fit-mode"><option value="auto">Photographed disk · automatic fit</option><option value="flat">Flat artwork · circular crop</option><option value="manual">Photographed disk · manual outline</option></select></label>
+      <div id="manual-outline" hidden><p class="help">Positions and radii are fractions of the image (0–1). The angle is in degrees.</p><div class="fields two"><label>Center X<input id="outline-x" type="number" min=".05" max=".95" step=".01" value=".5"></label><label>Center Y<input id="outline-y" type="number" min=".05" max=".95" step=".01" value=".5"></label><label>Radius X<input id="outline-rx" type="number" min=".05" max=".8" step=".01" value=".4"></label><label>Radius Y<input id="outline-ry" type="number" min=".05" max=".8" step=".01" value=".4"></label><label>Outline angle<input id="outline-angle" type="number" min="-180" max="180" value="0"></label><label>Hole X<input id="outline-hx" type="number" min=".05" max=".95" step=".01" value=".5"></label><label>Hole Y<input id="outline-hy" type="number" min=".05" max=".95" step=".01" value=".5"></label></div></div>
+      <label>Scale<input id="art-zoom" type="range" min=".5" max="2" step=".01" value="1"></label><label>Rotation<input id="art-rotation" type="range" min="-180" max="180" step="1" value="0"></label><div class="fields two"><label>Horizontal<input id="art-x" type="range" min="-.4" max=".4" step=".01" value="0"></label><label>Vertical<input id="art-y" type="range" min="-.4" max=".4" step=".01" value="0"></label></div><button type="button" id="update-art" class="button full">Update disk preview ↻</button>
+     </details><p class="help">The preview unwraps the artwork for the portfolio's 3D disk. Your source image is retained.</p>
+    </section></aside></div>
+    <footer class="save-bar"><p id="save-hint">Save a draft until it feels ready.</p><div><button type="button" id="unpublish" class="text-button danger" hidden>Unpublish</button><button type="submit" name="action" value="draft" class="button" id="save-draft">Save draft</button><button type="submit" name="action" value="publish" class="button primary" id="publish">Publish project ↗</button></div></footer>
+   </form>
+  </section>
+ </section>
+</main>
+<dialog id="project-preview"><button id="close-preview" class="dialog-close" aria-label="Close preview">×</button><p class="eyebrow">PROJECT PREVIEW · NOT PUBLISHED</p><div class="preview-layout"><div class="disk-stage"><img id="preview-art" alt="Disk artwork"></div><div><p class="eyebrow" id="preview-category"></p><h2 id="preview-name"></h2><p id="preview-description"></p><p class="muted" id="preview-stack"></p><p class="help" id="preview-date"></p></div></div><button id="preview-publish" class="button primary">Publish this project ↗</button></dialog>
+<footer class="page-footer"><span>CHILL · KEEP MAKING THINGS.</span><span>ONE IDEA. ONE REPOSITORY. ONE DISK.</span></footer>
+</body></html>

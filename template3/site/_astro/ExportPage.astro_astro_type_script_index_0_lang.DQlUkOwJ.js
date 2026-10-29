@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["_astro/bootstrap.dru0MhUJ.js","_astro/preload-helper.CxFQXtKk.js"])))=>i.map(i=>d[i]);
+import{t as e}from"./preload-helper.CxFQXtKk.js";document.querySelector(`[data-barba=wrapper]`)&&await e(()=>import(`./bootstrap.dru0MhUJ.js`),__vite__mapDeps([0,1]));
