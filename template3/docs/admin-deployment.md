@@ -1,5 +1,17 @@
 # Project studio: local use and Vercel setup
 
+## Current production deployment
+
+Public website: https://portfolio-indol-one-ram3c051o2.vercel.app
+
+Project: `chill-chill/portfolio`. Source: `Aloysius8895/portfolio` (public, explicitly selected by the owner). Initial production build and public browser verification succeeded on 2026-10-29. Nine projects, the three award labels, portrait frames and gallery transition were checked. `/admin` currently shows the setup gate; production owner login and publishing are not enabled until credentials are configured.
+
+Vercel could not connect the Git repository automatically because its account needs a GitHub Login Connection. The current deployment was made manually with the CLI. Add the appropriate GitHub login connection in Vercel, then connect `Aloysius8895/portfolio` to this project to enable push-triggered updates. A successful manual deployment does not imply that Git-triggered publishing is active.
+
+Production configuration already supplied: `PUBLIC_BASE_URL`, `ADMIN_GITHUB_ID`, `PORTFOLIO_REPOSITORY`, `PORTFOLIO_BRANCH` and a generated secret stored as a Vercel sensitive environment variable. Remaining owner setup: `GITHUB_CLIENT_ID`, `GITHUB_CLIENT_SECRET`, `GITHUB_TOKEN`, plus the Vercel GitHub Login Connection. No credential values belong in this document or chat.
+
+Dependency note: the deployment audit flags the available Sharp 0.34.5 dependency. The configured registry did not provide the recommended 0.35.5 release at deployment time. The image processor therefore applies the maintainer-documented decoder allowlist: only PNG/JPEG/WebP Buffer loaders are enabled, and byte signatures are checked before metadata inspection. All other foreign loaders are blocked, including SVG, HEIF/AVIF, GIF, TIFF and VIPS. Regression tests cover decoding and disallowed loaders. Upgrade the dependency once the patched release is available in the configured registry; do not remove this allowlist. See [Sharp's decoder controls](https://sharp.pixelplumbing.com/api-utility/#block) and [upstream advisories](https://github.com/lovell/sharp/security/advisories).
+
 ## Use it locally
 
 Requires Node.js 24 and Python 3.10 or newer. Start `Start-Preview.cmd` from the portfolio folder. It installs locked dependencies on its first run, then serves:

@@ -13,3 +13,5 @@ __pycache__/
 template3/verification/
 template3/docs/cleanup-*.json
 template3/site/project-discs/*.svg
+
+.vercel

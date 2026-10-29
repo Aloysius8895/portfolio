@@ -21,3 +21,8 @@ test('flat artwork has a supported explicit fallback and rejects malformed or ov
   await assert.rejects(() => prepareArtwork({ data: Buffer.from('fake').toString('base64') }));
   await assert.rejects(() => prepareArtwork({ data: source.toString('base64'), calibration: { mode: 'flat', zoom: 99 } }));
 });
+test('unsupported decoder families are disabled before metadata inspection', async () => {
+  const svg = Buffer.from('<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128"><rect width="128" height="128"/></svg>');
+  await assert.rejects(() => sharp(svg).metadata(), /blocked|unsupported|not a known/i);
+  await assert.rejects(() => prepareArtwork({ data: Buffer.from('GIF89a' + 'x'.repeat(100)).toString('base64') }), /Only PNG/);
+});
