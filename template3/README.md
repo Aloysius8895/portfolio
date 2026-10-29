@@ -25,7 +25,7 @@ Artwork preparation needs OpenCV, NumPy, Pillow, imageio-ffmpeg and, for disc ex
 
 ## Portrait behavior
 
-All 240 source frames are prepared into desktop/mobile WebP atlases. The pointer continuously selects a fractional frame and the renderer blends its neighboring frames. Five expression intervals cover approximately equal pointer areas, recalibrated after resizing. Buttons select sample poses; touch devices can use the buttons.
+All 240 source frames are prepared into desktop/mobile WebP atlases. Moving the pointer around the face advances a circular phase: one complete orbit is one expression cycle, with five equal parts of a turn (72 degrees each). The next orbit continues through the last/first boundary without rewinding; opposite motion reverses through the same boundary. Radial movement adds a small continuous phase adjustment. The renderer blends neighboring frames within the video and restarts directly from frame 239 to frame 0 at the seam. The original first/last poses differ, so they are not crossfaded into a held double image. Buttons select the nearest cyclic sample pose; touch devices can use the buttons.
 
 `followSmoothingMs: 180` and `followMaxFramesPerSecond: 72` retain the slower response. Reduced motion shows the target directly. The renderer stops drawing when settled and pauses when the introduction is hidden.
 
@@ -35,6 +35,6 @@ Light background removal preserves enclosed eyes, glasses and hair and composite
 
 From the parent directory: `npm test` and `npm run check`.
 
-`verification/check-white-balanced.py` checks pointer distribution and sample buttons with Playwright. Start a test server on port 18085 before running it from this directory. It writes current screenshots and a report in `verification/`.
+From the repository root, `python tools/verify_cyclic_follow.py` checks repeated pointer orbits, reverse seams, stopped-pointer hold, resizing and mobile sample buttons with Playwright. It uses the running local server on port 8083 by default; pass `--base https://your-site.vercel.app` to check a deployment. It writes screenshots and a report in `template3/verification/`.
 
 Historical crawler reference files, old screenshots, unused portrait modules and the previous root website have been removed. Current site assets and project build tools remain. See `docs/cleanup-2026-10-29.json` for cleanup paths.

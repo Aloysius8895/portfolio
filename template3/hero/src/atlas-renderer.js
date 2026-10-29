@@ -1,3 +1,5 @@
+import { frameBlendAt } from './expression-field.js';
+
 const VERTEX = `attribute vec2 position;
 varying vec2 uv;
 void main() { uv = (position + 1.0) * 0.5; gl_Position = vec4(position, 0.0, 1.0); }`;
@@ -98,8 +100,7 @@ export async function createAtlasRenderer(canvas, manifest, signal) {
     let draws = 0;
     return {
       draw(value) {
-        const frame = Math.max(0, Math.min(manifest.frameCount - 1, value));
-        const a = Math.floor(frame), b = Math.min(a + 1, manifest.frameCount - 1), mix = frame - a;
+        const { a, b, mix } = frameBlendAt(value, manifest.frameCount);
         const sheetA = Math.floor(a / perSheet), sheetB = Math.floor(b / perSheet);
         const tileA = a % perSheet, tileB = b % perSheet;
         if (gl) {

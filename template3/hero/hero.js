@@ -59,21 +59,6 @@ function startHero() {
     onFailure(error) { console.info('Continuous expression rendering unavailable; retaining a still portrait.', error); },
   });
 
-  function calibrateExpressions() {
-    if (!shown || prog !== 0) return;
-    const bounds = hero.getBoundingClientRect(), portrait = media.getBoundingClientRect();
-    if (!bounds.width || !bounds.height || !portrait.width || !portrait.height) return;
-    const positions = [];
-    for (let row = 0; row < 60; row++) for (let column = 0; column < 80; column++) {
-      positions.push(pointerInHero(bounds.left + bounds.width * (column + .5) / 80,
-        bounds.top + bounds.height * (row + .5) / 60, portrait, config.motion.expressionArea, bounds));
-    }
-    player.calibrate(positions.filter(Boolean));
-  }
-  const expressionResize = new ResizeObserver(calibrateExpressions);
-  expressionResize.observe(hero); expressionResize.observe(media);
-  calibrateExpressions();
-
   function chooseExpression(key, animate = true) {
     if (!shown || prog > 0 || document.hidden) return;
     if (animate) player.request(key);
@@ -295,7 +280,7 @@ function startHero() {
   window.addEventListener('pageshow', () => { if (shown) chooseExpression('center', false); });
   window.addEventListener('pagehide', event => {
     player.pause();
-    if (!event.persisted) { expressionResize.disconnect(); discReveal.destroy(); player.destroy(); }
+    if (!event.persisted) { discReveal.destroy(); player.destroy(); }
   });
 
   poster.src = config.media.heroPoster;
